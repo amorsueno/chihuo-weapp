@@ -1,0 +1,41 @@
+<!--image.wxml-->
+
+<view class="container">
+
+  <view class="page-body">
+    <form>
+      <view class="page-section">
+        <view class="weui-cells">
+          <view class="weui-cell">
+            <view class="weui-cell__bd">
+              <view class="weui-uploader">
+                <view class="weui-uploader__hd">
+                  <view class="weui-uploader__title">点击可预览选好的图片</view>
+                  <view class="weui-uploader__info">{{imageList.length}}/9</view>
+                </view>
+                <view class="weui-uploader__bd">
+                  <view class="weui-uploader__files">
+                    <block wx:for="{{imageList}}" wx:for-item="image">
+                      <view class="weui-uploader__file">
+                        <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                      </view>
+                    </block>
+                  </view>
+                   <view class="weui-uploader__input-box">
+                    <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                  </view> 
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <button class="weui-btn" type="primary" bindtap="add">上传</button>
+          </view>
+      </view>
+    </form>
+  </view>
+
+
+</view>
+
