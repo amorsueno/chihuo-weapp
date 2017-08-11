@@ -1,0 +1,85 @@
+<!--add.wxml-->
+<view class="page">
+  <view class="page-body">
+
+    <view class="page-section">
+      <!--1-->
+      <view class="weui-cells__title">主题</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入主题" maxlength="20"  bindinput="titleinput"
+            name="title" value="{{title}}"  confirm-type="next"/>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="page-section page-section-gap">
+      <!--2-->
+      <view class="weui-cells__title">备注</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请输入备注" style="height: 7em" maxlength="400" 
+            cursor-spacing="10" bindinput="textareaInput" name="description" value="{{description}}"/>
+            <view class="weui-textarea-counter">
+              <text class="page-body-text">{{inputTextSize}}</text>/400</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="page-section page-section-gap">
+      <!--3-->
+      <view class="weui-cells__title">位置</view>
+      <view class="weui-cells weui-cells_after-title" bindtap="chooseLocation">
+        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="/icon/location_light_dbdbdb.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+          </view>
+          <view class="weui-cell__bd">
+            <block wx:if="{{hasLocation === false}}">
+              <text class="page-body-text">未选择位置</text>
+            </block>
+            <block wx:if="{{hasLocation === true}}">
+              <text class="page-body-text">{{address}}</text>
+            </block>
+          </view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+    <!--4-->
+    <!--<view class="page-section page-section-gap">
+      <view class="weui-cells__title">图片</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-uploader__hd">
+             <view class="weui-uploader__title"></view>
+            <view class="weui-uploader__info">{{uploadImages.length||0}}/{{allImages.length||0}}</view>
+        </view>
+        <view class="weui-uploader__bd" style="margin-left:20rpx;">
+            <view class="weui-uploader__files" id="uploaderFiles">
+                <block wx:for="{{allImages}}" wx:key="{{index}}">
+                    <view class="weui-uploader__file"  id="{{item}}" style="position: relative;margin-right: 10px;">
+                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" data-t="maker" bindtap="previewImage"/>
+                        <view data-index="{{index}}" class="weui-badge" data-t="maker" bindtap="delPic" 
+                        style="position: absolute;bottom: +0.1em;right: +0.1em;">-</view>
+                    </view>
+                </block>
+            </view>
+            <view class="weui-uploader__input-box">
+                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+            </view>
+        </view>
+      </view>
+  </view>-->
+
+
+  <view class="page-section page-section-gap button-sp-area">
+
+    <button class="weui-btn" type="primary" bindtap="add">确定</button>
+
+  </view>
+</view>
+<!--.page-body end-->
+</view>
+<!--page end-->

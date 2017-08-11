@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/info/info",
+        "pages/detail/detail",
+        "pages/add/add",
+        "pages/about/about",
+        "pages/image/image"
+    ],
+    "window": {
+        "backgroundColor": "#000",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1195db",
+        "navigationBarTitleText": "吃货备忘录",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#318efb",
+        "borderStyle": "#3891f8",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "icon/home_dbdbdb.png",
+                "selectedIconPath": "icon/home_1195db.png",
+                "text": "主页"
+            },
+            {
+                "pagePath": "pages/add/add",
+                "iconPath": "icon/my_dbdbdb.png",
+                "selectedIconPath": "icon/my_1195db.png",
+                "text": "新增"
+            },
+            {
+                "pagePath": "pages/info/info",
+                "iconPath": "icon/my_dbdbdb.png",
+                "selectedIconPath": "icon/my_1195db.png",
+                "text": "我的"
+            }
+        ]
+    }
+}

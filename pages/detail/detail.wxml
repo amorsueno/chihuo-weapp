@@ -1,0 +1,29 @@
+<!--detail.wxml-->
+<page class="page detail">
+    <!--图片 -->
+    <view class="detail-main-image-view">
+        <image class="detail-main-image" mode="scaleToFill" src="{{record.main_image||nopic_url}}" />
+    </view>
+     <view class="page__bd">
+        <view class="weui-panel">
+            <view class="weui-panel__hd">
+                <text class="detail-title">{{record.title}}</text><!--标题-->
+            </view>
+            <view class="weui-panel__bd">
+                <text class="detail-description">{{record.description}}</text><!--详情-->
+            </view>
+        </view>
+    </view>
+    
+    
+    <!--关键字-->
+    <!--优先级-->
+    <!--创建人及头像-->
+    <!--创建时间-->
+    <!--查看位置-->
+    <view class="detail-post-meta">
+        <view class="detail-post-avatar">
+            <image class="detail-post-avatar-img" mode="scaleToFill" src="{{record.avatar}}" />
+        </view>
+    </view>
+</page>

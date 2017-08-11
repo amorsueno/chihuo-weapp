@@ -1,0 +1,5 @@
+/* image.wxss */
+@import "../../utils/weui.wxss";
+.page-body{
+    width:100%;
+}

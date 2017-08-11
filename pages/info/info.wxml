@@ -1,0 +1,43 @@
+<!--info.wxml-->
+<view class="mine_box page">
+    <view class="user_show page__hd i-header g-bda-userinfo">
+        <image mode="aspectFill" class="userinfo-avatar" src="{{user.avatarUrl}}"></image>
+        <text>{{user.nickName}}</text>
+    </view>
+    <!-- <view class="operations">
+    <navigator url="../about/about">关于</navigator>
+  </view> -->
+    <view class="page__bd">
+        <view class="weui-panel">
+            <view class="weui-panel__hd">账户中心</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_small-appmsg">
+                    <navigator url="" bindtap="info" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <image src="/icon/my_light_1195db.png" style="width: 20px;height: 20px;margin-right: 5px" />
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <view>个人资料</view>
+                        </view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+
+                    <navigator url="/pages/about/about"  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <image src="/icon/coffee_1195db.png" style="width: 20px;height: 20px;margin-right: 5px" />
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <view>关于本程序</view>
+                        </view>
+                        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="page__ft">
+        <view class="gif">
+
+        </view>
+    </view>
+</view>

@@ -1,0 +1,24 @@
+/* detail.wxss */
+.detail{
+  height: 100%;
+  width:100%;
+}
+.detail-main-image-view{
+    width:100%;
+}
+.detail-main-image{
+   width:100%; 
+}
+.detail-post-avatar{
+  margin-right: 20rpx;
+}
+.detail-title{
+    font-size: 50rpx;
+    color: #000;
+}
+
+.detail-description{
+    font-size: 30rpx;
+    color: #000;
+    padding-left: 20rpx;
+}
